@@ -1,0 +1,192 @@
+.body {
+  background-image: url(./pics/fon.png);
+  display: flex;
+  flex-direction: column;
+  Justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: #fff;
+  font-size: 57px;
+  height: 67px;
+  margin-bottom: 8px;
+}
+
+input[type=radio] {
+  visibility: hidden;
+  position: absolute;
+  margin: 0;
+}
+
+input[type=radio] + label:before {
+  height: 60px;
+  margin-right: 24px;
+  content: " ";
+  display:inline-block;
+  vertical-align: baseline;
+}
+
+.text {
+  color: #fff;
+  font-size: 50px;
+  height: 60px;
+}
+
+input[type=radio] + label:before{
+  border-radius: 0%;
+  transform: rotate(45deg);
+  width: 18px;
+  height: 18px;
+  margin-right: 24px;
+  border: none;
+}
+
+input[type=radio]:checked + label:before {
+  background: #D62B2E;
+}
+
+input[type=radio]:hover + label:before {
+  border-radius: 0%;
+  border: none;
+  transform: rotate(45deg);
+  width: 18px;
+  height: 18px;
+  margin-right: 24px;
+  background: #D62B2E;
+}
+
+input[type=radio] + label:hover {
+  opacity: .7;
+}
+
+
+.descripton {
+  color: #fff;
+  font-size: 20px;
+  height: 23px;
+  margin-bottom: 60px;
+}
+
+#startButton {
+  color: #fff;
+  display: flex;
+  font-size: 32px; 
+  justify-content: center; 
+  align-items: center;
+  height: 95px;
+  width: 352px;
+  background-color: #d62b2e;
+  border: solid #d62b2e 1px;
+  border-radius: 3%;
+  cursor: pointer;
+}
+
+.levels {
+  display: flex;
+  width: 275px;
+  height: 227px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 112px;
+}
+
+#easy, #middle, #hard {
+  display: flex;
+  height: 60px;
+  cursor: pointer;
+}
+
+.cardA {
+  position: absolute;
+  Width: 218px;
+  Height: 341px;
+  margin-top: -17%;
+  margin-left: 30%;
+  transform: rotate(12deg);
+}
+
+.cardB {
+  position: absolute;
+  width: 218px;
+  height: 341px;
+  margin-left: 40%;
+  margin-top: -17%;
+  transform: rotate(39deg);
+}
+
+#easyGame {
+  display: none;
+  grid-template-columns: 218px 218px 218px;  
+  grid-template-rows: 341px;
+  grid-gap: 24px;  
+  position: relative;
+  margin:  130px auto 0 auto;
+}
+
+#middleGame {
+  display: none;
+  grid-template-columns: 218px 218px 218px;  
+  grid-template-rows: 341px 341px;
+  grid-gap: 24px;  
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+
+#hardGame {
+  display: none;
+  grid-template-columns: repeat(5, 218px);  
+  grid-template-rows: 341px 341px;
+  max-width: 1210px;
+  max-height: 706px;
+  grid-gap: 24px;  
+  position: relative;
+  margin: 30px auto 0 auto;
+}
+
+.cardFace {
+  position: absolute;
+  width: 218px;
+  height: 341px; 
+  text-align: center; 
+  backface-visibility: hidden;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.shirt {
+  position: absolute;
+  width: 218px;
+  height: 341px; 
+  backface-visibility: hidden;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  right: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  transition: transform 0.6s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transition: 0.5s;
+  transition: transform 0.6s;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}

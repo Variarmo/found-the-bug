@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Found the bug!</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="body">
+  <div id="menu"> 
+   <h1 class="title"> Выберите уровень сложности:</h1>
+   <p class="descripton"> Чем выше уровень сложности - тем больше карт.</p>
+   <nav class="levels">
+    
+      <input type="radio" name="level-menu" class="level-menu" value="3" id="easy" checked/>
+      <label for="easy" class="text" >Просто</label> 
+
+      <input type="radio" name="level-menu" class="level-menu" value="6" id="middle"/>
+      <label for="middle" class="text">Средне</label>
+    
+      <input type="radio" name="level-menu" class="level-menu" value="10" id="hard"/>
+      <label for="hard" class="text">Сложно</label>
+
+   </nav>
+  <a id="startButton"> Начать игру </a>  
+  <div class="cardsCover">
+    <img src="./pics/shirt.png" class="cardA"/>
+    <img src="./pics/shirt.png" class="cardB"/>
+  </div> 
+  </div>
+
+  <div id="easyGame">  
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="bagCard"><img src="./pics/bug.png"/></div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard1"><img src="./pics/loss.png"/> </div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard2"><img src="./pics/loss.png"/> </div>
+    </div>
+  </div>
+
+  <div id="middleGame">
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="bagCard"><img src="./pics/bug.png"/></div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard1"><img src="./pics/loss.png"/> </div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard2"><img src="./pics/loss.png"/> </div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard2"><img src="./pics/loss.png"/> </div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard3"><img src="./pics/loss.png"/></div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard4"><img src="./pics/loss.png"/></div>
+    </div>
+  </div>
+
+  <div id="hardGame">    
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="bagCard"><img src="./pics/bug.png"/></div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard1"><img src="./pics/loss.png"/> </div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard2"><img src="./pics/loss.png"/> </div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard3"><img src="./pics/loss.png"/></div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard4"><img src="./pics/loss.png"/></div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard5"><img src="./pics/loss.png"/></div>
+    </div>
+    
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard6"><img src="./pics/loss.png"/></div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard7"><img src="./pics/loss.png"/></div>
+    </div>
+      
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard8"><img src="./pics/loss.png"/></div>
+    </div>
+
+    <div class="card"> 
+      <div class="shirt"><img src="./pics/shirt.png" class="cardShirt"/></div> 
+      <div class="cardFace" id="lossCard10"><img src="./pics/loss.png"/></div>
+    </div>
+  </div>
+
+  <script src="./script.js" ></script>
+</body>
+</html> 
